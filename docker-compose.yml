@@ -1,8 +1,6 @@
 services:
   resonate:
-    # image: resonatehqio/resonate:latest
-    image: resonate:latest
-    pull_policy: never
+    image: resonatehqio/resonate:latest
     command: ["serve"]
     ports:
       - "8001:8001"
