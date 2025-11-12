@@ -4,4 +4,6 @@ global:
 scrape_configs:
   - job_name: "resonate"
     static_configs:
-      - targets: ["resonate:9090"]
+      - targets:
+          - "host.docker.internal:9090"
+          - "resonate:9090" # when running with the with-resonate profile

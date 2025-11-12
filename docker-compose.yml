@@ -1,11 +1,10 @@
 services:
   resonate:
+    profiles: ["with-resonate"] # use docker --profile with-resonate compose up
     image: resonatehqio/resonate:latest
     command: ["serve"]
     ports:
       - "8001:8001"
-      - "8002:8002"
-      - "9090:9090"
       - "50051:50051"
 
   grafana:
