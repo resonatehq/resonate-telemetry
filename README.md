@@ -3,13 +3,12 @@
 This project provides a self-contained observability sandbox for experimenting with [Resonate](https://github.com/resonatehq/resonate) and [OpenTelemetry](https://opentelemetry.io) metrics and traces using **Prometheus**, **Grafana**, and **Tempo**.
 
 The stack consists of four services:
+- **Resonate**: Emits prometheus-compatible metrics.
+- **Prometheus**: Collects and stores metrics emitted by Resonate.
+- **Tempo**: Collects distributed traces emitted by Resonate applications via the OpenTelemetry (OTLP) protocol.
+- **Grafana**: Provides a unified dashboard to visualize both metrics and traces.
 
-| Service | Description |
-|----------|--------------|
-| **Resonate** | Emits prometheus-compatible metrics. |
-| **Prometheus** | Collects and stores metrics emitted by Resonate. |
-| **Tempo** | Collects distributed traces emitted by Resonate applications via the OpenTelemetry (OTLP) protocol. |
-| **Grafana** | Provides a unified dashboard to visualize both metrics and traces. |
+https://github.com/user-attachments/assets/e35f20b1-718d-4106-b363-c77f506b2d38
 
 ## Run
 
